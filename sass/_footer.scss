@@ -1,0 +1,103 @@
+.footer {
+  &-top {
+    padding: 150px 0px;
+    background-color: $gray-dark;
+  }
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 130px;
+  }
+
+  &-logo {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  &-desc {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    &-item {
+      font-size: 20px;
+      transition: color 0.2s linear;
+      color: $gray-light;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &-heading {
+    color: $gray-lighter;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &-links {
+    list-style: none;
+  }
+
+  &-item {
+    margin-bottom: 30px;
+  }
+
+  &-link {
+    display: inline-block;
+    color: $gray-light;
+  }
+
+  &-info {
+    list-style: none;
+    margin-bottom: 40px;
+    li a {
+      color: $gray-lighter;
+    }
+  }
+
+  &-info li {
+    margin-bottom: 15px;
+    line-height: lineH(30, 16);
+  }
+
+  &-highlight {
+    color: white;
+  }
+
+  &-bottom {
+    background-color: $gray-darker;
+  }
+
+  &-bottom a {
+    color: $gray-lighter;
+  }
+
+  &-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  &-roket {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: $gray-lighter;
+    border-radius: 4px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: $blue-color;
+    z-index: 2;
+  }
+}
