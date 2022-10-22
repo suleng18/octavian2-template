@@ -1,5 +1,6 @@
 .portfolio {
   margin-bottom: 200px;
+  display: block;
   &-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,15 +10,12 @@
 
   &-image {
     margin-bottom: 40px;
-  }
-
-  &-title {
-    font-size: 22px;
-    line-height: 1.56;
+    display: block;
   }
 
   &-category {
-    font-size: 14px;
+    // font-size: 14px;
+    color: $gray-light;
   }
 
   &-column {
@@ -30,5 +28,35 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include maxw(1023px) {
+    margin-bottom: 100px;
+    &-list {
+      grid-gap: 0 20px;
+      margin-bottom: 40px;
+    }
+
+    &-column {
+      gap: 40px 0;
+    }
+  }
+
+  @include maxw(767px) {
+    margin-bottom: 50px;
+    &-list {
+      grid-template-columns: 1fr;
+      grid-gap: 40px 0;
+    }
+
+    &-image {
+      margin-bottom: 30px;
+    }
+
+    &-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 }

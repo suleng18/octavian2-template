@@ -82,6 +82,8 @@ h6 {
   color: $gray;
   line-height: lineH(35, 22);
   margin-bottom: 20px;
+  display: block;
+  color: $gray;
 }
 
 .text {
@@ -91,4 +93,19 @@ h6 {
 
 .text--small {
   font-size: 14px;
+}
+
+@include maxw(767px) {
+  .heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
 }

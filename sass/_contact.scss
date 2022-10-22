@@ -1,6 +1,7 @@
 .contact {
   padding: 150px 0;
   background: url('../images/contact-bg.png') no-repeat center / cover;
+  display: block;
 
   &-container {
     max-width: 600px;
@@ -47,5 +48,19 @@
     line-height: 1.55;
     resize: none;
     min-height: 100px;
+  }
+
+  @include maxw(1023px) {
+    padding: 100px 0;
+    &-header {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include maxw(767px) {
+    padding: 50px 0;
+    &-header {
+      margin-bottom: 30px;
+    }
   }
 }
