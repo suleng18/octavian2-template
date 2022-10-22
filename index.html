@@ -19,14 +19,38 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
+    <div class="menu">
+      <ion-icon name="close" class="menu-close"> </ion-icon>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#portfolio" class="menu-link">Portfolio</a>
+        </li>
+        <li class="menu-item">
+          <a href="#partner" class="menu-link">Partners</a>
+        </li>
+        <li class="menu-item">
+          <a href="#team" class="menu-link">Team</a>
+        </li>
+        <li class="menu-item">
+          <a href="#blog" class="menu-link">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">Contact</a>
+        </li>
+        <li class="menu-item menu-phone">
+          Phone: <a href="tel:008987245345">+008 - 987 245 345</a>
+        </li>
+      </ul>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header-main">
           <img src="./images/logo.png" alt="" class="header-logo" />
           <div class="navigation">
-            <p class="header-phone">Phone: <span>+008 - 987 245 345</span></p>
+            <p class="header-phone">Phone: <a href="tel:008987245345">+008 - 987 245 345</a></p>
             <img src="./images/icon-search.png" alt="" class="icon-search" />
-            <img src="./images/icon-bars.png" alt="" class="icon-toggle" />
+            <img src="./images/icon-bars.png" alt="" class="menu-toggle" />
           </div>
         </div>
       </div>
@@ -44,7 +68,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio-list">
             <div class="portfolio-column">
@@ -168,7 +192,7 @@
         </div>
       </section>
 
-      <section class="partner">
+      <section class="partner" id="partner">
         <div class="container">
           <div class="partner-main">
             <a href="#" class="partner-item">
@@ -199,7 +223,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <div class="team-main">
             <div class="team-content">
@@ -229,7 +253,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog" id="blog">
         <div class="container">
           <div class="blog-header">
             <h2 class="blog-heading heading">Take a look at our services</h2>
@@ -272,7 +296,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container contact-container">
           <div class="contact-header">
             <h2 class="contact-heading heading">

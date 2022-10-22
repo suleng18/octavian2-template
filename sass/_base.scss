@@ -20,6 +20,10 @@ select {
   border: 0;
 }
 
+section[id] {
+  scroll-margin-top: 30px;
+}
+
 input {
   line-height: normal;
 }
@@ -56,6 +60,9 @@ input {
     background-color: transparent;
     background-image: linear-gradient(to right, rgb(212, 89, 89), rgb(37, 92, 203));
   }
+}
+a {
+  color: inherit;
 }
 
 h1,

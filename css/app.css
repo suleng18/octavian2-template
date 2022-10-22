@@ -61,6 +61,10 @@ select {
   border: 0;
 }
 
+section[id] {
+  scroll-margin-top: 30px;
+}
+
 input {
   line-height: normal;
 }
@@ -96,6 +100,10 @@ input {
 .btn--secondary {
   background-color: transparent;
   background-image: linear-gradient(to right, rgb(212, 89, 89), rgb(37, 92, 203));
+}
+
+a {
+  color: inherit;
 }
 
 h1,
@@ -159,7 +167,8 @@ h6 {
 .header-phone {
   color: #393e46;
 }
-.header-phone span {
+.header-phone a {
+  color: inherit;
   font-weight: 600;
   margin-left: 15px;
 }
@@ -615,9 +624,9 @@ h6 {
   right: 0;
   top: 0;
   bottom: 0;
+  background-color: rgb(255, 255, 255);
   width: 300px;
-  background-color: white;
-  z-index: 9999;
+  z-index: 999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transform: translateX(100%);
   transition: transform 0.2s linear;
@@ -628,8 +637,8 @@ h6 {
 }
 .menu-list {
   list-style: none;
-  height: 100%;
-  padding: 70px 20px 20px;
+  height: 100px;
+  padding: 80px 20px 20px;
 }
 .menu-item {
   margin-bottom: 15px;
@@ -640,18 +649,18 @@ h6 {
   text-transform: capitalize;
   color: #393e46;
   border-radius: 6px;
-  transition: all 0.15s linear;
+  transition: all 0.2s linear;
 }
 .menu-link:hover {
-  color: white;
+  color: #f7f8f9;
   background-color: #4944f2;
 }
 .menu-close {
   cursor: pointer;
   font-size: 30px;
   position: absolute;
-  right: 20px;
   top: 20px;
+  right: 20px;
 }
 .menu-phone {
   padding: 15px;
